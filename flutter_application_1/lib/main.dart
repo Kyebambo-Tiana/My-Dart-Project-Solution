@@ -11,7 +11,7 @@ class BirthdayWishApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Birthday Wish App',
+      title: 'Tiana Birthday Wishes App', // App name updated
       theme: ThemeData(
         primarySwatch: Colors.teal, // any color except purple
       ),
@@ -29,7 +29,7 @@ class HomeScreen extends StatelessWidget {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Birthday Wishes'),
+          title: const Text('Tiana Birthday Wishes App'), // AppBar title updated
           bottom: const TabBar(
             tabs: [
               Tab(icon: Icon(Icons.card_giftcard), text: 'Message'),
@@ -82,7 +82,7 @@ class WishesTab extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       children: const [
         ListTile(
-          leading: Icon(Icons.celebration, color: Color.fromARGB(255, 63, 41, 53)),
+          leading: Icon(Icons.celebration, color: Colors.green),
           title: Text("Wishing you a year full of success!"),
         ),
         ListTile(
@@ -90,7 +90,7 @@ class WishesTab extends StatelessWidget {
           title: Text("May all your dreams come true!"),
         ),
         ListTile(
-          leading: Icon(Icons.card_giftcard, color: Color.fromARGB(255, 146, 41, 160)),
+          leading: Icon(Icons.card_giftcard, color: Colors.pink),
           title: Text("Happy Birthday and many happy returns!"),
         ),
       ],
